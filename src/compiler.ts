@@ -85,7 +85,8 @@ export class SFCCompiler {
     const descriptor = parse({
       source,
       filename,
-      needMap: true
+      needMap: true,
+      compiler: require('vue-template-compiler')
     })
 
     const scopeId =
